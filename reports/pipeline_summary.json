@@ -1,0 +1,10 @@
+{
+  "generated_count": 7,
+  "reviewed_accepted_count": 7,
+  "rejected_count": 0,
+  "final_count": 7,
+  "generated_cases": "C:\\sqa-projects\\llm-sqa-form-tester\\data\\test_cases\\generated_cases.json",
+  "reviewed_cases": "C:\\sqa-projects\\llm-sqa-form-tester\\data\\test_cases\\reviewed_cases.json",
+  "rejected_cases": "C:\\sqa-projects\\llm-sqa-form-tester\\data\\test_cases\\rejected_cases.json",
+  "final_cases": "C:\\sqa-projects\\llm-sqa-form-tester\\data\\test_cases\\final_test_cases.json"
+}

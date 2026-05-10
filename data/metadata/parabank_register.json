@@ -1,0 +1,26 @@
+{
+  "target_key": "parabank_register",
+  "target_name": "ParaBank Register for Free Online Account Access",
+  "url": "https://parabank.parasoft.com/parabank/register.htm",
+  "form_selector": "form",
+  "fields": [
+    {
+      "label": "username",
+      "input_type": "text",
+      "name": "username",
+      "field_id": "",
+      "placeholder": "",
+      "likely_required": false,
+      "css_selector": "input[name='username']"
+    },
+    {
+      "label": "password",
+      "input_type": "password",
+      "name": "password",
+      "field_id": "",
+      "placeholder": "",
+      "likely_required": false,
+      "css_selector": "input[name='password']"
+    }
+  ]
+}

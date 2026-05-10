@@ -1,0 +1,55 @@
+{
+  "info": {
+    "name": "Ollama Local Health Check",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "List Local Ollama Models",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:11434/api/tags",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "11434",
+          "path": [
+            "api",
+            "tags"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Generate JSON Test",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"model\": \"llama3.2:3b\",\n  \"prompt\": \"Return JSON only: {\\\"status\\\": \\\"ok\\\"}\",\n  \"stream\": false,\n  \"format\": \"json\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:11434/api/generate",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "11434",
+          "path": [
+            "api",
+            "generate"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=80.9.0", "wheel>=0.45.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-sqa-form-tester"
+version = "1.3.0"
+description = "LLM-assisted reviewed test case generation and risk-based execution for web forms"
+requires-python = ">=3.13,<3.14"
+readme = "README.md"
+authors = [{ name = "Academic SQA Project" }]
+license = { text = "MIT" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+target-version = "py313"
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+ignore = ["E501"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+
+[tool.mypy]
+python_version = "3.13"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+disable_error_code = ["import-untyped"]
+strict = false
+mypy_path = "src"
+
+[tool.pytest.ini_options]
+minversion = "9.0"
+addopts = "-ra --strict-markers"
+testpaths = ["tests"]
+markers = [
+    "unit: fast tests that do not open a browser",
+    "e2e: browser-based end-to-end tests",
+    "network: tests requiring internet access",
+]

@@ -1,0 +1,13 @@
+services:
+  sqa-framework:
+    build: .
+    container_name: llm-sqa-form-tester
+    environment:
+      OLLAMA_HOST: http://host.docker.internal:11434
+      OLLAMA_MODEL: llama3.2:3b
+      HEADLESS: "true"
+    volumes:
+      - ./data:/app/data
+      - ./reports:/app/reports
+      - ./logs:/app/logs
+    command: python -m llm_sqa.cli all --no-llm

@@ -1,0 +1,64 @@
+2026-05-09 19:12:37 | INFO | llm_sqa.extractor | Opening target page for metadata extraction: https://parabank.parasoft.com/parabank/register.htm
+2026-05-09 19:12:41 | INFO | llm_sqa.extractor | Extracted 2 fields for parabank_register
+2026-05-09 19:12:43 | INFO | llm_sqa.extractor | Opening target page for metadata extraction: https://www.automationexercise.com/login
+2026-05-09 19:12:47 | INFO | llm_sqa.extractor | Extracted 2 fields for automation_exercise_signup
+2026-05-09 19:12:52 | INFO | llm_sqa.llm_client | Calling Ollama model=llama3.2:3b
+2026-05-09 19:13:15 | WARNING | llm_sqa.pipeline | LLM generation failed for automation_exercise_signup: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+2026-05-09 19:13:17 | INFO | llm_sqa.llm_client | Calling Ollama model=llama3.2:3b
+2026-05-09 19:13:27 | WARNING | llm_sqa.pipeline | LLM generation failed for parabank_register: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+2026-05-09 19:13:29 | INFO | llm_sqa.llm_client | Calling Ollama model=llama3.2:3b
+2026-05-09 19:13:40 | WARNING | llm_sqa.pipeline | LLM review failed: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+2026-05-09 19:13:42 | INFO | llm_sqa.llm_client | Calling Ollama model=llama3.2:3b
+2026-05-09 19:13:50 | WARNING | llm_sqa.pipeline | LLM enrichment failed: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+2026-05-09 19:37:04 | INFO | llm_sqa.extractor | Opening target page for metadata extraction: https://parabank.parasoft.com/parabank/register.htm
+2026-05-09 19:37:09 | INFO | llm_sqa.extractor | Extracted 2 fields for parabank_register
+2026-05-09 19:37:11 | INFO | llm_sqa.extractor | Opening target page for metadata extraction: https://www.automationexercise.com/login
+2026-05-09 19:37:17 | WARNING | llm_sqa.pipeline | Browser metadata extraction failed for automation_exercise_signup: Could not find form using selector: form[action='/signup']
+2026-05-09 19:37:19 | INFO | llm_sqa.llm_client | Calling Ollama model=llama3.2:3b
+2026-05-09 19:37:32 | WARNING | llm_sqa.pipeline | LLM generation failed for parabank_register: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+2026-05-09 19:37:34 | INFO | llm_sqa.llm_client | Calling Ollama model=llama3.2:3b
+2026-05-09 19:37:46 | WARNING | llm_sqa.pipeline | LLM review failed: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+2026-05-09 19:37:48 | INFO | llm_sqa.llm_client | Calling Ollama model=llama3.2:3b
+2026-05-09 19:37:57 | WARNING | llm_sqa.pipeline | LLM enrichment failed: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+2026-05-09 20:10:04 | INFO | llm_sqa.extractor | Opening target page for metadata extraction: https://parabank.parasoft.com/parabank/register.htm
+2026-05-09 20:10:07 | INFO | llm_sqa.extractor | Extracted 2 fields for parabank_register
+2026-05-09 20:10:10 | INFO | llm_sqa.extractor | Opening target page for metadata extraction: https://www.automationexercise.com/login
+2026-05-09 20:10:12 | INFO | llm_sqa.extractor | Extracted 2 fields for automation_exercise_signup
+2026-05-09 20:10:16 | INFO | llm_sqa.llm_client | Calling Ollama model=llama3.2:3b
+2026-05-09 20:10:29 | WARNING | llm_sqa.pipeline | LLM generation failed for automation_exercise_signup: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+2026-05-09 20:10:31 | INFO | llm_sqa.llm_client | Calling Ollama model=llama3.2:3b
+2026-05-09 20:10:38 | WARNING | llm_sqa.pipeline | LLM generation failed for parabank_register: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+2026-05-09 20:10:40 | INFO | llm_sqa.llm_client | Calling Ollama model=llama3.2:3b
+2026-05-09 20:10:46 | WARNING | llm_sqa.pipeline | LLM review failed: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+2026-05-09 20:10:48 | INFO | llm_sqa.llm_client | Calling Ollama model=llama3.2:3b
+2026-05-09 20:10:54 | WARNING | llm_sqa.pipeline | LLM enrichment failed: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+2026-05-09 22:19:13 | INFO | llm_sqa.extractor | Opening target page for metadata extraction: https://parabank.parasoft.com/parabank/register.htm
+2026-05-09 22:19:24 | INFO | llm_sqa.extractor | Extracted 2 fields for parabank_register
+2026-05-09 22:19:27 | INFO | llm_sqa.extractor | Opening target page for metadata extraction: https://www.automationexercise.com/login
+2026-05-09 22:19:33 | WARNING | llm_sqa.pipeline | Browser metadata extraction failed for automation_exercise_signup: Could not find form using selector: form[action='/signup']
+2026-05-09 22:19:35 | INFO | llm_sqa.llm_client | Calling Ollama model=llama3.2:3b
+2026-05-09 22:20:05 | WARNING | llm_sqa.pipeline | LLM generation failed for parabank_register: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+2026-05-09 22:20:07 | INFO | llm_sqa.llm_client | Calling Ollama model=llama3.2:3b
+2026-05-09 22:20:21 | WARNING | llm_sqa.pipeline | LLM review failed: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+2026-05-09 22:20:24 | INFO | llm_sqa.llm_client | Calling Ollama model=llama3.2:3b
+2026-05-09 22:20:38 | WARNING | llm_sqa.pipeline | LLM enrichment failed: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+2026-05-09 22:32:21 | INFO | llm_sqa.extractor | Opening target page for metadata extraction: https://parabank.parasoft.com/parabank/register.htm
+2026-05-09 22:32:25 | INFO | llm_sqa.extractor | Extracted 2 fields for parabank_register
+2026-05-09 22:32:28 | INFO | llm_sqa.extractor | Opening target page for metadata extraction: https://www.automationexercise.com/login
+2026-05-09 22:32:32 | WARNING | llm_sqa.pipeline | Browser metadata extraction failed for automation_exercise_signup: Could not find form using selector: form[action='/signup']
+2026-05-09 22:32:34 | INFO | llm_sqa.llm_client | Calling Ollama model=llama3.2:3b
+2026-05-09 22:32:48 | WARNING | llm_sqa.pipeline | LLM generation failed for parabank_register: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+2026-05-09 22:32:50 | INFO | llm_sqa.llm_client | Calling Ollama model=llama3.2:3b
+2026-05-09 22:33:02 | WARNING | llm_sqa.pipeline | LLM review failed: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+2026-05-09 22:33:04 | INFO | llm_sqa.llm_client | Calling Ollama model=llama3.2:3b
+2026-05-09 22:33:17 | WARNING | llm_sqa.pipeline | LLM enrichment failed: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+2026-05-09 22:39:38 | INFO | llm_sqa.extractor | Opening target page for metadata extraction: https://parabank.parasoft.com/parabank/register.htm
+2026-05-09 22:39:42 | INFO | llm_sqa.extractor | Extracted 2 fields for parabank_register
+2026-05-09 22:39:45 | INFO | llm_sqa.extractor | Opening target page for metadata extraction: https://www.automationexercise.com/login
+2026-05-09 22:39:49 | WARNING | llm_sqa.pipeline | Browser metadata extraction failed for automation_exercise_signup: Could not find form using selector: form[action='/signup']
+2026-05-09 22:39:51 | INFO | llm_sqa.llm_client | Calling Ollama model=llama3.2:3b
+2026-05-09 22:40:05 | WARNING | llm_sqa.pipeline | LLM generation failed for parabank_register: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+2026-05-09 22:40:07 | INFO | llm_sqa.llm_client | Calling Ollama model=llama3.2:3b
+2026-05-09 22:40:20 | WARNING | llm_sqa.pipeline | LLM review failed: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate
+2026-05-09 22:40:22 | INFO | llm_sqa.llm_client | Calling Ollama model=llama3.2:3b
+2026-05-09 22:40:30 | WARNING | llm_sqa.pipeline | LLM enrichment failed: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/generate

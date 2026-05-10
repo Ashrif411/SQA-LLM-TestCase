@@ -1,0 +1,169 @@
+[
+  {
+    "target_key": "parabank_register",
+    "test_id": "PB_REG_001",
+    "scenario": "Register with all valid required data",
+    "case_type": "positive",
+    "input_data": {
+      "customer.firstName": "John",
+      "customer.lastName": "Tester",
+      "customer.address.street": "123 QA Street",
+      "customer.address.city": "Dhaka",
+      "customer.address.state": "Dhaka",
+      "customer.address.zipCode": "1207",
+      "customer.phoneNumber": "01700000000",
+      "customer.ssn": "123456789",
+      "customer.username": "qauser_${UNIQUE}",
+      "customer.password": "SecurePass123",
+      "repeatedPassword": "SecurePass123"
+    },
+    "tags": [
+      "smoke",
+      "registration",
+      "positive"
+    ]
+  },
+  {
+    "target_key": "parabank_register",
+    "test_id": "PB_REG_002",
+    "scenario": "Reject registration when first name is empty",
+    "case_type": "negative",
+    "input_data": {
+      "customer.firstName": "",
+      "customer.lastName": "Tester",
+      "customer.address.street": "123 QA Street",
+      "customer.address.city": "Dhaka",
+      "customer.address.state": "Dhaka",
+      "customer.address.zipCode": "1207",
+      "customer.phoneNumber": "01700000000",
+      "customer.ssn": "123456789",
+      "customer.username": "qauser_${UNIQUE}",
+      "customer.password": "SecurePass123",
+      "repeatedPassword": "SecurePass123"
+    },
+    "tags": [
+      "required-field",
+      "negative"
+    ]
+  },
+  {
+    "target_key": "parabank_register",
+    "test_id": "PB_REG_003",
+    "scenario": "Reject registration when username is empty",
+    "case_type": "negative",
+    "input_data": {
+      "customer.firstName": "John",
+      "customer.lastName": "Tester",
+      "customer.address.street": "123 QA Street",
+      "customer.address.city": "Dhaka",
+      "customer.address.state": "Dhaka",
+      "customer.address.zipCode": "1207",
+      "customer.phoneNumber": "01700000000",
+      "customer.ssn": "123456789",
+      "customer.username": "",
+      "customer.password": "SecurePass123",
+      "repeatedPassword": "SecurePass123"
+    },
+    "tags": [
+      "required-field",
+      "identity",
+      "negative"
+    ]
+  },
+  {
+    "target_key": "parabank_register",
+    "test_id": "PB_REG_004",
+    "scenario": "Reject registration when password is empty",
+    "case_type": "negative",
+    "input_data": {
+      "customer.firstName": "John",
+      "customer.lastName": "Tester",
+      "customer.address.street": "123 QA Street",
+      "customer.address.city": "Dhaka",
+      "customer.address.state": "Dhaka",
+      "customer.address.zipCode": "1207",
+      "customer.phoneNumber": "01700000000",
+      "customer.ssn": "123456789",
+      "customer.username": "qauser_${UNIQUE}",
+      "customer.password": "",
+      "repeatedPassword": ""
+    },
+    "tags": [
+      "required-field",
+      "password",
+      "negative"
+    ]
+  },
+  {
+    "target_key": "parabank_register",
+    "test_id": "PB_REG_005",
+    "scenario": "Reject registration when password and confirm password do not match",
+    "case_type": "negative",
+    "input_data": {
+      "customer.firstName": "John",
+      "customer.lastName": "Tester",
+      "customer.address.street": "123 QA Street",
+      "customer.address.city": "Dhaka",
+      "customer.address.state": "Dhaka",
+      "customer.address.zipCode": "1207",
+      "customer.phoneNumber": "01700000000",
+      "customer.ssn": "123456789",
+      "customer.username": "qauser_${UNIQUE}",
+      "customer.password": "SecurePass123",
+      "repeatedPassword": "DifferentPass123"
+    },
+    "tags": [
+      "password",
+      "mismatch",
+      "negative"
+    ]
+  },
+  {
+    "target_key": "parabank_register",
+    "test_id": "PB_REG_006",
+    "scenario": "Submit alphabetic phone number and verify validation behavior",
+    "case_type": "negative",
+    "input_data": {
+      "customer.firstName": "John",
+      "customer.lastName": "Tester",
+      "customer.address.street": "123 QA Street",
+      "customer.address.city": "Dhaka",
+      "customer.address.state": "Dhaka",
+      "customer.address.zipCode": "1207",
+      "customer.phoneNumber": "invalid-phone",
+      "customer.ssn": "123456789",
+      "customer.username": "qauser_${UNIQUE}",
+      "customer.password": "SecurePass123",
+      "repeatedPassword": "SecurePass123"
+    },
+    "tags": [
+      "format",
+      "phone",
+      "negative"
+    ]
+  },
+  {
+    "target_key": "parabank_register",
+    "test_id": "PB_REG_007",
+    "scenario": "Submit overly long username and verify validation behavior",
+    "case_type": "negative",
+    "input_data": {
+      "customer.firstName": "John",
+      "customer.lastName": "Tester",
+      "customer.address.street": "123 QA Street",
+      "customer.address.city": "Dhaka",
+      "customer.address.state": "Dhaka",
+      "customer.address.zipCode": "1207",
+      "customer.phoneNumber": "01700000000",
+      "customer.ssn": "123456789",
+      "customer.username": "uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+      "customer.password": "SecurePass123",
+      "repeatedPassword": "SecurePass123"
+    },
+    "tags": [
+      "boundary",
+      "username",
+      "negative"
+    ]
+  }
+]
